@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, div, h1, h2, p, ul, li, img, blockquote {
+	margin: 0px; padding: opx; boder: 0px;
+}
+
+body {
+	font-family: "Courier New", Courier, monospace;
+	font-color: #333333;
+	background-color: #ffffff;
+}
+
+#holder {
+	float: centre;
+	color: #333333;
+
+}
+
+#pic {
+	margin: 15px;
+	text-align: center;
+}
