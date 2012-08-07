@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <head>
-<meta name="google-site-verification" content="QgFlQie-5tXZywIBAqQd9X7lyORWd2Hdzt4MPuSWCbo" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="css/styles.css" type="text/css" />
-<title>ReleaseMedia - a multimedia consultancy based in Hampshire</title>
+<title>ReleaseMedia - Talk to us</title>
 <meta name="description" content="ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications, based in Hampshire. Graphic design, Web design, animation, 3D modelling, e-Learning, photography, audio editing, video editing. ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications, based in Hampshire. Graphic design, Web design, animation, 3D modelling, e-Learning, photography, audio editing, video editing. ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications, based in Hampshire. Graphic design, Web design, animation, 3D modelling, e-Learning, photography, audio editing, video editing. ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications, based in Hampshire. Graphic design, Web design, animation, 3D modelling, e-Learning, photography, audio editing, video editing. ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications, based in Hampshire. Graphic design, Web design, animation, 3D modelling, e-Learning, photography, audio editing, video editing. ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications, based in Hampshire. Graphic design, Web design, animation, 3D modelling, e-Learning, photography, audio editing, video editing. ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications, based in Hampshire. Graphic design, Web design, animation, 3D modelling, e-Learning, photography, audio editing, video editing. "/>
 </head>
 
@@ -26,16 +25,16 @@ var currentTime = new Date()
 var month = currentTime.getMonth() + 1
 var day = currentTime.getDate()
 var year = currentTime.getFullYear()
-document.write(day + "." + month +  "." + year)
+document.write(day + "." + month + "." + year)
 //-->
 </script>
 </p>
     </div>
     <div id="menu">
     <ul id="nav">
-      <li><a href="#" class="navon">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="work.html">Porfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#" class="navon">Contact</a></li>
     </ul>
   </div>
 
@@ -46,19 +45,32 @@ document.write(day + "." + month +  "." + year)
     <div id="top">
     <div class="topleft">
     <div class="title">
-    	<p>Services</p>
+    	<p>Talk to us</p>
     </div>
     <div class="text">
-    <p>ReleaseMedia is a multimedia consultancy providing services in all areas of multimedia, from small business web design/development to large commercial consultancy contracts on bespoke training applications.</p><br />
-    <p>A professional and skilled consultancy with many years experience in all areas of multimedia. We are dedicated to all projects we undertake and take great satisfaction in exceeding our clients expectations.</p><br />
-    <p>Based in central Hampshire and working throughout the county, we are also willing to travel for the bespoke needs of our costumers.</p>
+    <p>Whatever your needs, please get in touch to discuss how we can help you.</p>
+    <p>We protect the privatacy of our customers and enquirers, please leave a query below and we will be in contact very soon with a reply.</p>
     </div>
     </div> <!--topleft-->
-    <div class="image"><img src="images/box1.jpg" alt="Project management, web design, web development, sound editing, illustration, graphic design, e-learning, photography, 3D modelling, flash, video editing"></div>
+    <div class="image">
+    
+    </div>
     </div> <!--top-->
     
     <div class="services">
-    <img src="images/services.jpg" alt="Project management, web design, web development, sound editing, illustration, graphic design, e-learning, photography, 3D modelling, flash, video editing">
+    	<form method="POST" action="mailer.php">
+           <p>Name</p><input type="text" name="name" size="36"><br>
+           <br>
+           <p>Telephone</p><input type="text" name="telephone" size="36"><br>
+           <br>
+           <p>Email</p><input type="text" name="email" size="36"><br>
+           <br>
+           <p>Enquiry</p><textarea rows="9" name="message" cols="100"></textarea>
+           <br>
+           
+           <input type="submit" value="Submit" name="submit">
+           <input type="reset" name="reset" value="Reset">
+        </form>
     </div>
 
 </div> <!--content-->
