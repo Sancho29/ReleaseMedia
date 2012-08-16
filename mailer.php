@@ -59,7 +59,7 @@ document.write(day + "." + month + "." + year)
     <div class="services">
         <?php
 		if(isset($_POST['submit'])) {
-		$to = "chris@cmd-media.co.uk";
+		$to = "chris_martins@hotmail.com";
 		$subject = "ReleaseMedia Ltd Enquiry";
 		$name_field = $_POST['name'];
 		$telephone_field = $_POST['telephone'];
