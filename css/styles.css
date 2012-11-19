@@ -25,20 +25,20 @@ body {
 
 	/*///////////////////////////////////////////////////////////////MENU//////////////////////////////////////////////////////////////*/
 
-#menu {
+nav {
 	padding: 0;
 	overflow: visible;
 	border-top: 1px solid #dedede;
 	margin: 0 0 0 0;
 }
-	#menu ul#nav {
+	nav ul#nav {
 		float: right;
 	}
-	#menu ul#nav li {
+	nav ul#nav li {
 		float: left;
 		list-style: none;
 	}
-	#menu ul#nav li a {
+	nav ul#nav li a {
 		display: block;
 		margin: 7px;
 		padding: 3px;
@@ -49,16 +49,16 @@ body {
 		height: 27px;
 		color:#dedede;
 	}
-	#menu ul#nav li a:hover {
+	nav ul#nav li a:hover {
 		color: #999999;
 	}
-	#menu ul#nav li a.navon {
+	nav ul#nav li a.navon {
 		color: #333333;
 	}
 	
 	/*///////////////////////////////////////////////////////////////HEADER//////////////////////////////////////////////////////////////*/
 	
-#header {
+header {
 	margin-top: 20px;
 	height: 200px;
 }
@@ -216,7 +216,7 @@ text-align:right;
 	
 	/*///////////////////////////////////////////////////////////////FOOTER//////////////////////////////////////////////////////////////*/
 	
-#footer {
+footer {
 	border-top: 1px solid #dedede;
 	padding: 25px 10px;
 	/*background-color:#E5E5E5;*/
