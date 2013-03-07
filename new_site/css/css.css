@@ -1,0 +1,301 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/.png);
+    color: #333333;
+    font-family: Open Sans, Arial;
+    font-weight: 500;
+	background-color: #333;
+}
+
+#wrapper {
+	margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../images/.png) center repeat-y;
+    z-index: 100;
+    max-width: 1024px;
+}
+
+header {
+	position: fixed;
+	z-index: 9999;
+    height: 56px;
+	width: 100%;
+	max-width: 1024px;
+	float: left;
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+header h1 {
+	float: left;
+	font-size: 50px;
+	margin: 0;
+	margin-left: 10px;
+	color: #5F5F5F;
+	letter-spacing: -3px;
+	Font-family: Helvetica, Arial, sans-serif;
+	}
+	
+footer {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 10px;
+	color: #fff;
+	}
+
+	footer p {
+		padding-left: 10px;
+	}
+
+nav {
+	float: right;
+    width: auto;
+	padding: 9px 14px;
+}
+
+nav ul {
+    list-style: none;
+    width:auto;
+    margin: 0 auto;
+    padding:0;
+}
+
+nav ul li {
+    float:left;
+    padding: 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:#5E5C5C;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color:#333333;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+a {
+	color: #884242;
+	text-decoration: none;
+}
+
+.block {
+    width: auto;
+	height: auto;
+	margin: 0;
+	padding-top: 35px;
+	background: #fff;
+}
+
+.block:last-child {
+    margin-bottom: 0;
+}
+
+.block.home {
+	margin-top: 0;
+	background: white;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 50px 0;
+	}
+.block.services {
+	background: white;
+	border-bottom: 1px solid #E5E5E5;
+	}
+.block.work {
+	margin: 0;
+	padding: 0;
+	padding-top: 35px;
+	background: white;
+	border-bottom: 1px solid #E5E5E5;
+	}
+.block.contact {
+	background: white;
+	border-bottom: 1px solid #E5E5E5;
+	margin-bottom: 0;
+	}
+	
+.block-header {
+    width: 100%;
+    height: auto;
+}
+
+.block-header h1 {
+	font-size: 35px;
+	color: #777;
+	letter-spacing: -3px;
+	margin-left: 15px;
+	}
+
+.content {
+    padding: 0;
+    overflow: hidden;
+	position: relative;
+}
+
+.comtent.home {
+	padding: 0 10px;
+}
+
+.picture {
+	text-align: center;
+}
+
+.picture.right {
+	text-align: right;
+}
+
+.text {
+	margin: 30px;
+	font-size: 0.8em;
+	line-height: 1.6;
+	font-weight: 300;
+}
+.text.home {
+	width: 100%;
+}
+.text.statement {
+	margin: 0;
+	width: auto;
+	background: rgb(77, 77, 77);
+	padding: 30px;
+	color: #59EBFF;
+}
+.text.contact {
+	margin: 30px;
+}
+
+.work {
+	
+}		
+.example {
+	float: left;
+	padding-top: 40px;
+	width: 100%;
+	height: 440px;
+	position: relative;
+}
+.example.even {
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+.example.odd {
+	background: WhiteSmoke;
+	border-bottom: 1px solid #eee;
+}
+.exText {
+	margin: 40px;
+	width: 30%;
+	font-size: 0.8em;
+	line-height: 1.6;
+	font-weight: 300;
+}
+	.exText h2 {
+	font-size: 18px;
+	display: inline;
+	color:#333333;
+	line-height: 24pt;
+
+	}
+.exImg {
+	position: absolute;
+	height: auto;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+	}
+.exImg a {
+
+}
+.exImg a:hover {
+
+}
+.exImg a img {
+	/*border: 1px solid #333;
+	border-color: #BBB #DDD #EBEBEB;*/
+	}
+
+.tweet, .query {
+	font: 100% Gill Sans, sans-serif;
+	color: #333;
+	max-width: 500px;
+	float: right;
+	margin: 5px;
+}
+
+.tweet_list {
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	border-radius: 0.2em;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	background-color: #dadada;
+}
+
+.tweet_list li {
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0.3em;
+	list-style-type: none;
+}
+
+.tweet_list li a {
+	color: #fff;
+}
+
+.tweet_list .tweet_even {
+	background-color: #BBB;
+}
+
+.tweet_list .tweet_avatar {
+	padding-right: .5em; float: left;
+}
+
+.tweet_list .tweet_avatar img {
+	vertical-align: middle;
+}
+
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+
+@media (max-width: 600px) {
+
+.example {
+	width: auto;
+	height: auto;
+}
+.exText {
+	width: auto;
+}
+.exImg {
+	position: relative;
+}
+header {
+	height: 40px;
+}
+header h1 {
+	display: none;
+}
+nav {
+	padding: 3px 0;
+}
+
+}
