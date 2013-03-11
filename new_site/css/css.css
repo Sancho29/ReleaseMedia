@@ -37,7 +37,7 @@ header h1 {
 	font-size: 50px;
 	margin: 0;
 	margin-left: 10px;
-	color: #5F5F5F;
+	color: #884242;
 	letter-spacing: -3px;
 	Font-family: Helvetica, Arial, sans-serif;
 	}
@@ -56,7 +56,7 @@ footer {
 nav {
 	float: right;
     width: auto;
-	padding: 9px 14px;
+	padding: 12px 8px;
 }
 
 nav ul {
@@ -168,13 +168,33 @@ a {
 .text.statement {
 	margin: 0;
 	width: auto;
-	background: rgb(77, 77, 77);
+	background: #884242;
 	padding: 30px;
-	color: #59EBFF;
+	color: #fff;
 }
 .text.contact {
 	margin: 30px;
 }
+.service-icons {
+	width: 100%;
+	margin: 0 auto;
+}
+.service {
+	width: 30%;
+	float: left;
+	margin: 10px;
+}
+.service-img {
+	text-align: center;
+}
+.service-text {
+	text-align: center;
+}
+	.service-text h2 {
+		color: #884242;
+		letter-spacing: -2px;
+		font-size: 1.5em;
+	}
 
 .work {
 	
@@ -216,23 +236,19 @@ a {
     bottom: 0;
     text-align: right;
 	}
-.exImg a {
-
+.contact-info {
+	font-size: 3em;
+	font-weight: 500;
+	letter-spacing: -2px;
+	margin: 0;
 }
-.exImg a:hover {
-
-}
-.exImg a img {
-	/*border: 1px solid #333;
-	border-color: #BBB #DDD #EBEBEB;*/
-	}
 
 .tweet, .query {
 	font: 100% Gill Sans, sans-serif;
 	color: #333;
 	max-width: 500px;
 	float: right;
-	margin: 5px;
+	margin: 10px;
 }
 
 .tweet_list {
@@ -276,6 +292,22 @@ a {
 	float: left;
 }
 
+@media (max-width: 940px) {
+	.exImg {
+	width: 60%;
+	}
+
+	header h1 {
+	font-size: 49px;
+	}
+
+	.tweet {
+	width: auto !important;
+	max-width: 100% !important;
+	margin: 15px;
+	}
+}
+
 @media (max-width: 600px) {
 
 .example {
@@ -286,6 +318,7 @@ a {
 	width: auto;
 }
 .exImg {
+	width: 100%;
 	position: relative;
 }
 header {
@@ -296,6 +329,15 @@ header h1 {
 }
 nav {
 	padding: 3px 0;
+}
+.service {
+	width: 28%;
+	}
+.example {
+	padding-top: 15px;
+}
+.text {
+	margin: 15px;
 }
 
 }
