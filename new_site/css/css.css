@@ -2,9 +2,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/.png);
     color: #333333;
-    font-family: Open Sans, Arial;
+    font-family: "museo-sans-rounded",sans-serif;
     font-weight: 500;
 	background-color: #333;
 }
@@ -16,7 +15,6 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: url(../images/.png) center repeat-y;
     z-index: 100;
     max-width: 1024px;
 }
@@ -24,22 +22,28 @@ body {
 header {
 	position: fixed;
 	z-index: 9999;
-    height: 56px;
+    height: 38px;
 	width: 100%;
 	max-width: 1024px;
 	float: left;
 	background-color: #fff;
 	border-bottom: 1px solid #eee;
+	/*transition: height 0.5s;
+	-moz-transition: height 0.5s;
+	-webkit-transition: height 0.5s;
+	-o-transition: height 0.5s; */
 }
-
+header.expand {
+	height: 146px;
+}
 header h1 {
 	float: left;
-	font-size: 50px;
+	font-size: 2em;
+	font-weight: 500;
 	margin: 0;
 	margin-left: 10px;
-	color: #884242;
-	letter-spacing: -3px;
-	Font-family: Helvetica, Arial, sans-serif;
+	letter-spacing: -2px;
+	Font-family: "museo-sans-rounded",sans-serif;
 	}
 	
 footer {
@@ -53,33 +57,47 @@ footer {
 		padding-left: 10px;
 	}
 
-nav {
+nav.nav-desktop {
 	float: right;
     width: auto;
-	padding: 12px 8px;
+	padding: 4px 8px;
 }
 
-nav ul {
+nav.nav-desktop ul {
     list-style: none;
     width:auto;
     margin: 0 auto;
     padding:0;
 }
 
-nav ul li {
+nav.nav-desktop ul li {
     float:left;
     padding: 5px;
 }
-nav ul li a {
+nav.nav-desktop ul li a {
     text-decoration: none;
-    color:#5E5C5C;
-    font-size: 20px;
+    color: #BBB;
+	font-weight: 300;
+	font-size: 1.1em;
 }
-nav ul li a:hover {
+nav.nav-desktop ul li a:hover {
     text-decoration: none;
     color:#333333;
 }
-
+nav.nav-mobile {
+	background-color: #333;
+	display: none;
+	/*transition: height 0.5s;
+	-moz-transition: height 0.5s;
+	-webkit-transition: height 0.5s;
+	-o-transition: height 0.5s;*/
+}
+nav.nav-mobile ul {
+	list-style: none;
+}
+nav.nav-mobile.show {
+	display: block;
+}
 img {
 	max-width: 100%;
 	vertical-align: middle;
@@ -87,7 +105,7 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 a {
-	color: #884242;
+	color: #0076A2;
 	text-decoration: none;
 }
 
@@ -107,8 +125,11 @@ a {
 	margin-top: 0;
 	background: white;
 	border-bottom: 1px solid #E5E5E5;
-	padding: 50px 0;
+	padding: 30px 0;
 	}
+.block.home.expand {
+	padding-top: 146px;
+}
 .block.services {
 	background: white;
 	border-bottom: 1px solid #E5E5E5;
@@ -133,8 +154,9 @@ a {
 
 .block-header h1 {
 	font-size: 35px;
-	color: #777;
-	letter-spacing: -3px;
+	font-weight: 500;
+	color: #EF7C00;
+	letter-spacing: -1px;
 	margin-left: 15px;
 	}
 
@@ -168,7 +190,7 @@ a {
 .text.statement {
 	margin: 0;
 	width: auto;
-	background: #884242;
+	background: #0076A2;
 	padding: 30px;
 	color: #fff;
 }
@@ -191,9 +213,10 @@ a {
 	text-align: center;
 }
 	.service-text h2 {
-		color: #884242;
+		color: #0076A2;
 		letter-spacing: -2px;
 		font-size: 1.5em;
+		font-weight: 500;
 	}
 
 .work {
@@ -213,6 +236,7 @@ a {
 .example.odd {
 	background: WhiteSmoke;
 	border-bottom: 1px solid #eee;
+	color: #333;
 }
 .exText {
 	margin: 40px;
@@ -226,7 +250,7 @@ a {
 	display: inline;
 	color:#333333;
 	line-height: 24pt;
-
+	font-weight: 500;
 	}
 .exImg {
 	position: absolute;
@@ -244,9 +268,10 @@ a {
 }
 
 .tweet, .query {
-	font: 100% Gill Sans, sans-serif;
+	font: 100% "museo-sans-rounded",sans-serif;
 	color: #333;
-	max-width: 500px;
+	width: 48%;
+	height: 48%;
 	float: right;
 	margin: 10px;
 }
@@ -259,7 +284,6 @@ a {
 	margin: 0;
 	padding: 0;
 	overflow-y: hidden;
-	background-color: #dadada;
 }
 
 .tweet_list li {
@@ -270,11 +294,11 @@ a {
 }
 
 .tweet_list li a {
-	color: #fff;
+	color: #0076A2;
 }
 
 .tweet_list .tweet_even {
-	background-color: #BBB;
+	background-color: WhiteSmoke;
 }
 
 .tweet_list .tweet_avatar {
@@ -291,21 +315,32 @@ a {
 .pull-left {
 	float: left;
 }
+.btn-navbar {
+	display: none;
+	float: right;
+	padding: 7px 10px;
+	margin: 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.icon-bar {
+	display: block;
+	width: 18px;
+	height: 2px;
+	margin: 2px;
+	background-color: #777;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
 
 @media (max-width: 940px) {
 	.exImg {
 	width: 60%;
 	}
 
-	header h1 {
-	font-size: 49px;
-	}
-
-	.tweet {
-	width: auto !important;
-	max-width: 100% !important;
-	margin: 15px;
-	}
 }
 
 @media (max-width: 600px) {
@@ -321,11 +356,11 @@ a {
 	width: 100%;
 	position: relative;
 }
-header {
-	height: 40px;
-}
-header h1 {
+nav.nav-desktop {
 	display: none;
+}
+.btn-navbar {
+	display: block;
 }
 nav {
 	padding: 3px 0;
@@ -339,5 +374,10 @@ nav {
 .text {
 	margin: 15px;
 }
+.tweet {
+	width: auto !important;
+	max-width: 100% !important;
+	margin: 15px;
+	}
 
 }

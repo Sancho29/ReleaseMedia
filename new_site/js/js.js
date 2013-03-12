@@ -18,17 +18,31 @@ $(document).ready(function(){
 
     function scrollToAnchor(id){
         var goTo = $(id);
-        $('html,body').animate({scrollTop: goTo.offset().top},'slow');
+        $('html,body,header').animate({scrollTop: goTo.offset().top},'slow');
     }
 
-    $(".link").click(function(e) {
-							  e.preventDefault();
+    $('.link').click(function(e) {
+		e.preventDefault();
 							  
         var linkId = $(this).attr('href'); 
 			
         scrollToAnchor(linkId);
     });
 
+    $('.link.mobile').click(function(e) {
+        e.preventDefault();
+        $('nav.nav-mobile').toggleClass('show');
+        $('header').toggleClass('expand');
+        $('.block.home').toggleClass('expand');
+    })
+
+    $('.btn-navbar').click(function(e) {
+        e.preventDefault();
+                              
+        $('nav.nav-mobile').toggleClass('show');
+        $('header').toggleClass('expand');
+        $('.block.home').toggleClass('expand');
+    });
 
 });
 
