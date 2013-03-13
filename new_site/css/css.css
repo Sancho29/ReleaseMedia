@@ -22,16 +22,12 @@ body {
 header {
 	position: fixed;
 	z-index: 9999;
-    height: 38px;
+    height: auto;
 	width: 100%;
 	max-width: 1024px;
 	float: left;
 	background-color: #fff;
 	border-bottom: 1px solid #eee;
-	/*transition: height 0.5s;
-	-moz-transition: height 0.5s;
-	-webkit-transition: height 0.5s;
-	-o-transition: height 0.5s; */
 }
 header.expand {
 	height: 146px;
@@ -87,10 +83,6 @@ nav.nav-desktop ul li a:hover {
 nav.nav-mobile {
 	background-color: #333;
 	display: none;
-	/*transition: height 0.5s;
-	-moz-transition: height 0.5s;
-	-webkit-transition: height 0.5s;
-	-o-transition: height 0.5s;*/
 }
 nav.nav-mobile ul {
 	list-style: none;
@@ -218,10 +210,7 @@ a {
 		font-size: 1.5em;
 		font-weight: 500;
 	}
-
-.work {
 	
-}		
 .example {
 	float: left;
 	padding-top: 40px;
@@ -277,13 +266,11 @@ a {
 }
 
 .tweet_list {
-	-webkit-border-radius: 0.2em;
-	-moz-border-radius: 0.2em;
-	border-radius: 0.2em;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	overflow-y: hidden;
+	background-color: WhiteSmoke;
 }
 
 .tweet_list li {
@@ -298,7 +285,7 @@ a {
 }
 
 .tweet_list .tweet_even {
-	background-color: WhiteSmoke;
+	background-color: #fff;
 }
 
 .tweet_list .tweet_avatar {
@@ -341,6 +328,12 @@ a {
 	width: 60%;
 	}
 
+}
+
+@media (min-width: 600px) {
+	nav.nav-mobile {
+		display: none !important;
+	}
 }
 
 @media (max-width: 600px) {
