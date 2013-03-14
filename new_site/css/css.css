@@ -6,6 +6,7 @@ body {
     font-family: "museo-sans-rounded",sans-serif;
     font-weight: 500;
 	background-color: #333;
+	min-width: 385px;
 }
 
 #wrapper {
@@ -86,6 +87,10 @@ nav.nav-mobile {
 }
 nav.nav-mobile ul {
 	list-style: none;
+}
+nav.nav-mobile ul li {
+	padding: 2px 0;
+	font-size: 1.1em;
 }
 nav.nav-mobile.show {
 	display: block;
@@ -327,7 +332,9 @@ a {
 	.exImg {
 	width: 60%;
 	}
-
+.contact-info {
+	font-size: 2em;
+}
 }
 
 @media (min-width: 600px) {
@@ -361,6 +368,9 @@ nav {
 .service {
 	width: 28%;
 	}
+.service-text h2 {
+	font-size: 1em;
+}
 .example {
 	padding-top: 15px;
 }
@@ -372,5 +382,8 @@ nav {
 	max-width: 100% !important;
 	margin: 15px;
 	}
+.contact-info {
+	font-size: 2em;
+}
 
 }
