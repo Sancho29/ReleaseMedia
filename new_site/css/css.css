@@ -1,3 +1,7 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+} /* HTML5 for IE7 & 8 */
 
 body {
     margin: 0;
