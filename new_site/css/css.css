@@ -10,7 +10,7 @@ body {
     font-family: "museo-sans-rounded",sans-serif;
     font-weight: 500;
 	background-color: #333;
-	min-width: 340px;
+	min-width: 300px;
 }
 
 #wrapper {
@@ -354,7 +354,7 @@ a {
 	height: auto;
 }
 .exText {
-	width: auto;
+	width: 85%;
 }
 .exImg {
 	width: 100%;
