@@ -196,7 +196,7 @@ a {
 	margin: 0;
 	width: auto;
 	background: #0076A2;
-	padding: 30px;
+	padding: 50px 80px;
 	color: #fff;
 }
 .text.contact {
@@ -239,6 +239,13 @@ a {
 	background: WhiteSmoke;
 	border-bottom: 1px solid #eee;
 	color: #333;
+}
+.example.odd .exText {
+	float: right;
+}
+.example.odd .exImg {
+	left: 0;
+	text-align: left;
 }
 .exText {
 	margin: 40px;
@@ -353,6 +360,9 @@ a {
 
 @media (max-width: 600px) {
 
+.text.statement {
+	padding: 30px;
+}
 .example {
 	width: auto;
 	height: auto;
